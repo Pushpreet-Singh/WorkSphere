@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../UI/Button";
 import { Card, CardContent } from "../UI/Card";
+import { useNavigate } from "react-router-dom";
 
 const WorkSphereHomepage = () => {
   
@@ -16,6 +17,7 @@ const WorkSphereHomepage = () => {
       console.error(`Element with id "${targetId}" not found.`);
     }
   };
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -29,7 +31,7 @@ const WorkSphereHomepage = () => {
             <li><a href="#contact" onClick={(e) => handleScroll(e, "contact")} className="text-gray-700 hover:text-blue-600">Contact</a></li>
           </ul>
         </nav>
-        <Button>Login</Button>
+        <Button onClick={() => navigate("/login")}>Login</Button>
       </header>
       
       {/* Main Content */}
@@ -59,7 +61,7 @@ const WorkSphereHomepage = () => {
           </Card>
           <Card className="transition-transform transform hover:scale-105 duration-300">
             <CardContent>
-              <img src="/images/easy-communication.jpg" alt="Easy Communication" className="w-full h-40 object-cover mb-4" />
+              <img src="/assets/talk.png" alt="Easy Communication" className="w-full h-40 object-cover mb-4" />
               <h3 className="text-xl font-bold text-blue-600">Easy Communication</h3>
               <p className="text-gray-600">Seamless messaging and project collaboration.</p>
             </CardContent>
@@ -122,6 +124,12 @@ const WorkSphereHomepage = () => {
           </div>
         </div>
       </main>
+      <footer>
+        <div className="bg-gray-800 text-white p-6 text-center ">
+          <p className="text-base">Worksphere 2023. All rights reserved.</p>
+          <h2 className="text-sm">Ziion Technology, Mohali</h2>
+        </div>
+      </footer>
     </div>
   );
 };
