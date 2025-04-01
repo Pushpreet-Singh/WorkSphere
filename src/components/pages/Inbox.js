@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card, CardContent } from '../UI/Card';
 import Button from '../UI/Button';
+import { BabyIcon, LucideBetweenHorizonalStart } from 'lucide-react';
 
 const InboxPage = () => {
   const navigate = useNavigate();
@@ -32,8 +33,9 @@ const InboxPage = () => {
       <header className='bg-gray-800 text-white p-4 flex justify-between items-center'>
         <h1 className='text-2xl font-bold'>WorkSphere</h1>
         <div className='flex gap-4'>
+        
           <Button onClick={() => navigate('/dashboard')} className='bg-blue-500'>
-            Dashboard
+            Dashboard 
           </Button>
           <Button onClick={() => navigate('/')} className='bg-red-500'>
             Logout
@@ -67,7 +69,7 @@ const InboxPage = () => {
 
       <footer className='bg-gray-800 text-white p-6 text-center w-full mt-10'>
         <p className='text-base'>WorkSphere 2023. All rights reserved.</p>
-        <h2 className='text-sm'>Ziion Technology, Mohali</h2>
+        {/* <h2 className='text-sm'>Ziion Technology, Mohali</h2> */}
       </footer>
     </div>
   );

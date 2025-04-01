@@ -138,14 +138,12 @@ const FreelanceDashboard = () => {
             </div>
           </section>
         </main>
-
-        {/* Footer */}
-        
       </div>
+      {/* Footer */}
       <div className="w-full">
         <footer className="bg-gray-800 text-white p-6 text-center w-full">
           <p className="text-base">WorkSphere 2023. All rights reserved.</p>
-          <h2 className="text-sm">Ziion Technology, Mohali</h2>
+          {/* <h2 className="text-sm">Ziion Technology, Mohali</h2> */}
         </footer>
       </div>
     </>

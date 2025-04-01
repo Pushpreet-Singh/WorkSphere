@@ -85,7 +85,7 @@ const ChatPage = () => {
 
       <footer className="bg-gray-800 text-white p-6 text-center w-full mt-10">
         <p className="text-base">WorkSphere 2023. All rights reserved.</p>
-        <h2 className="text-sm">Ziion Technology, Mohali</h2>
+        {/* <h2 className="text-sm">Ziion Technology, Mohali</h2> */}
       </footer>
     </div>
   );

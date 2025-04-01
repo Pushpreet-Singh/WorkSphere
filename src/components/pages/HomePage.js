@@ -127,7 +127,7 @@ const WorkSphereHomepage = () => {
       <footer>
         <div className="bg-gray-800 text-white p-6 text-center ">
           <p className="text-base">Worksphere 2023. All rights reserved.</p>
-          <h2 className="text-sm">Ziion Technology, Mohali</h2>
+          {/* <h2 className="text-sm">Ziion Technology, Mohali</h2> */}
         </div>
       </footer>
     </div>
